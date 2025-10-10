@@ -8,6 +8,12 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.10.09]
+- completed the pre-assignment in component brainstormin
+
+## [2025.10.07]
+- 
+
 ## [2025.09.19]
 - Designed a storyGenerator component
 - Designed a dailyToDoList component
