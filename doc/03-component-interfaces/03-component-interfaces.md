@@ -134,9 +134,9 @@ of it in this folder. You may also embed it just below using markdown syntax
 
 ```mermaid
 graph BT;
-   Standard[Standard<StoryGenerator>];
+   Standard[Standard< StoryGenerator >];
    Kernel[StoryGeneratorKernel];
-   Enhanced[StoryGenerator;]
+   Enhanced[StoryGenerator];
 
    Enhanced -->|extends| Kernel;
    Kernel -->|extends| Standard;
@@ -161,8 +161,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 

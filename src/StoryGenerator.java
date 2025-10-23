@@ -15,17 +15,13 @@ public interface StoryGenerator extends StoryGeneratorKernel {
     String generatePlot(String template);
 
     /**
-     * Removes all elements from {@code category}, leaving the category name in
-     * {@code this}.
-     * 
+     * Remove {@code category} in {@code this}.
      * @param category
-     * 
      *            the category to be cleared
-     * 
      * @updates this
-     * 
      * @requires {@code category} is in the set of categories in {@code this}
+     * @ensure this = #this without the {@code category}
      */
-    void removeCategory(String categoty);
+    void removeCategory(String category);
 
 }
