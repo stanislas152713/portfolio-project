@@ -1,6 +1,6 @@
 import java.util.List;
+import java.util.Set;
 
-import components.set.Set;
 import components.standard.Standard;
 
 /**
@@ -105,6 +105,7 @@ public interface StoryGeneratorKernel extends Standard<StoryGenerator> {
     /**
      * Returns a set of the names of all templates currently stored in
      * {@code this}.
+     * 
      * @return a set containing the names of all templates
      * @ensures templates include all template names in {@code this}
      */

@@ -8,6 +8,10 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.11.20]
+### Updated
+- In StoryGeneratorKernel interface, java map is used instead of osu map.
+
 ## [2025.10.23]
 ### Added
 - Designed StoryGeneratorKernel interface and StoryGenerator interface
