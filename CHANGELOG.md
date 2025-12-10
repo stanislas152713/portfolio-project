@@ -8,13 +8,22 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
-## [2025.11.06]
+## [2025.11.20]
+### Updated
+- In StoryGeneratorKernel interface, java map is used instead of osu map.
 
+## [2025.10.23]
 ### Added
-- Implemented StoryGeneratorSecondary
+- Designed StoryGeneratorKernel interface and StoryGenerator interface
+### Updated
+- Changed the design of StoryGeneratorKernel to include methods to access, add to, and remove from elements, categories, and templates.
+- Changed the design of StoryGenerator to include removeCategory.
 
 ## [2025.10.09]
 - completed the pre-assignment in component brainstormin
+
+## [2025.10.07]
+-
 
 ## [2025.09.19]
 - Designed a storyGenerator component
