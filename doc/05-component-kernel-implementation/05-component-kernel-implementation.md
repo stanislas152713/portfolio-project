@@ -1,8 +1,8 @@
 # Portfolio Part 5: Kernel Implementation
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Lianyu Yang
+- **Dot Number**: yang.7674
+- **Due Date**: 11/21 @ 1:50 pm
 
 ## Assignment Overview
 
@@ -120,7 +120,17 @@ Below is further rationale/explanation for the rubric items above:
 > discuss how that representation will be restricted (i.e., by convention)
 > and interpreted (i.e., by correspondence).
 
-<!-- TODO: select a representation and explain why -->
+StoryGenerator is represented by 2 private instance variables: `templates` modeled by `Map<String, List<String>>` and `categories` modeled by `Map<String, List<String>>`. Specifically, `java.util.HashMap` and `java.util.ArrayList` are used.
+
+Why `Map`: `StoryGenerator` needs to store categories and their corresponding elements, as well as template names and their corresponding order.
+
+Why `HashMap`: `StoryGenerator` requires lots of looking up data by name (e.g., finding a certain category or template). `HashMap` provides O(1) average complexity for these lookups, which is highly efficient.
+
+Why `List` for elements: The elements don't have to be ordered. But I think it would be nice to keep the order in which the user put elements.
+
+Why `List` for order: `StoryGenerator` randomly picks elements from certain categories according to the order.
+
+Why `ArrayList`: In my mind `ArrayList` is the common choice if no special feature other than order is needed.
 
 > To start making your kernel implementation, make a branch off of main in your
 > new repo called something like `kernel-implementation`. There are many ways to

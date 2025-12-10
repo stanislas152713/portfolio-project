@@ -20,6 +20,12 @@ the following form: YYYY.0M.0D.
 - Changed the design of StoryGenerator to include removeCategory.
 
 ## [2025.10.09]
+### Added
+- The kernel implementation of `StoryGenerator`
+- Completed the doc *05-component-kernel-implementation* which explains why `StoryGenerator` is modeled this way.
+
+
+## [2025.10.09]
 - completed the pre-assignment in component brainstormin
 
 ## [2025.10.07]
