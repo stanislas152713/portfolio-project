@@ -59,8 +59,8 @@ public class StoryGenerator1 extends StoryGeneratorSecondary {
      * @param categories
      *            Categories of elements
      */
-    public StoryGenerator1(Map<String, List<String>> templates,
-            Map<String, List<String>> categories) {
+    public StoryGenerator1(Map<String, List<String>> categories,
+            Map<String, List<String>> templates) {
         this.templates = templates;
         this.categories = categories;
     }
@@ -105,7 +105,7 @@ public class StoryGenerator1 extends StoryGeneratorSecondary {
      */
 
     @Override
-    public void addElement(String category, String element) {
+    public final void addElement(String category, String element) {
         assert category != null : "Violation of: category is not null";
         assert element != null : "Violation of: element is not null";
 
@@ -116,7 +116,7 @@ public class StoryGenerator1 extends StoryGeneratorSecondary {
     }
 
     @Override
-    public void addTemplate(String name, List<String> order) {
+    public final void addTemplate(String name, List<String> order) {
         assert name != null : "Violation of: name is not null";
         assert order != null : "Violation of: order is not null";
         assert !this.templates.containsKey(
@@ -130,27 +130,30 @@ public class StoryGenerator1 extends StoryGeneratorSecondary {
     }
 
     @Override
-    public Set<String> categories() {
+    public final Set<String> categories() {
         return this.categories.keySet();
     }
 
     @Override
-    public List<String> elements(String category) {
+    public final List<String> elements(String category) {
         return this.categories.get(category);
     }
 
     @Override
-    public void removeElement(String category, String element) {
+    public final void removeElement(String category, String element) {
         assert this.categories.containsKey(
                 category) : "Violation of: category is in this.categories";
         assert this.categories.get(category)
                 .contains(element) : "Violation of: element is in category";
 
         this.categories.get(category).remove(element);
+        if (this.categories.get(category).size() == 0) {
+            this.categories.remove(category);
+        }
     }
 
     @Override
-    public List<String> templateOrder(String name) {
+    public final List<String> templateOrder(String name) {
         assert this.templates
                 .containsKey(name) : "Violation of: name is in this.templates";
 
@@ -158,7 +161,7 @@ public class StoryGenerator1 extends StoryGeneratorSecondary {
     }
 
     @Override
-    public List<String> removeTemplate(String name) {
+    public final List<String> removeTemplate(String name) {
         assert this.templates
                 .containsKey(name) : "Violatio of: name is in this.templates";
 
@@ -166,7 +169,7 @@ public class StoryGenerator1 extends StoryGeneratorSecondary {
     }
 
     @Override
-    public Set<String> templates() {
+    public final Set<String> templates() {
         return this.templates.keySet();
     }
 }

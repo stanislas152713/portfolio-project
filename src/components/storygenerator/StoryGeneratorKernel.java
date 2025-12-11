@@ -73,7 +73,8 @@ public interface StoryGeneratorKernel extends Standard<StoryGenerator> {
      * @updates this
      * @requires {@code category} is in the set of categories in {@code this}
      *           and {@code element} is in {@code category}
-     * @ensures this = #this without {@code element} in {@code category}
+     * @ensures this = #this without {@code element} in {@code category} and [if
+     *          {@code category} contains no element, it is removed]
      */
     void removeElement(String category, String element);
 

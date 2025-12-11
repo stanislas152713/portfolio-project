@@ -17,6 +17,20 @@ public interface StoryGenerator extends StoryGeneratorKernel {
     String generatePlot(String template);
 
     /**
+     * Generate plot by randomly obtaining element from the categories specified
+     * in the template and combining them in the order specified by the
+     * template.
+     *
+     * @param template
+     *            The template of order used
+     * @param seed
+     *            The seed for the random object
+     * @return A random plot generated according to the template of order.
+     *
+     */
+    String generatePlot(String template, Long seed);
+
+    /**
      * Remove {@code category} in {@code this}.
      *
      * @param category

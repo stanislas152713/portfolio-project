@@ -1,10 +1,12 @@
-package components.StoryGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import components.storygenerator.StoryGenerator;
+import components.storygenerator.StoryGenerator1;
+
 /**
- *
+ * A demo of StoryGenerator.
  */
 public final class Demo {
 
@@ -15,11 +17,12 @@ public final class Demo {
     }
 
     /**
+     * The main method.
      *
      * @param args
      */
     public static void main(String[] args) {
-        StoryGenerator x = new StoryGenerator();
+        StoryGenerator x = new StoryGenerator1();
         List<String> presetTemplate = new ArrayList<>();
 
         /*
