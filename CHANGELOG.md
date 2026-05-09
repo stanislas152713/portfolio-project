@@ -8,11 +8,38 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.10]
+### Updated
+- Update the method, `removeElement`, in the `StoryGenerator` kernel interfaces and classes: now if the category is empty after the element is removed, it will be removed from `this.categories`.
+- Update the constructor with parameters. Now it is `StoryGenerator1(Map<String, List<String>> categories, Map<String, List<String>> templates)`.
+- Complete 06-component-finishing-touches.
+### Added
+- `StoryGenerator` now has a new method `String generatePlot(String template, Long seed)`.
+- Use case: `QuizBank` is added.
+- Test cases for Standard, Kernel, and Secondary methods.
+
+## [2025.11.20]
+### Updated
+- In StoryGeneratorKernel interface, java map is used instead of osu map.
+
+## [2025.10.23]
+### Added
+- Designed StoryGeneratorKernel interface and StoryGenerator interface
+### Updated
+- Changed the design of StoryGeneratorKernel to include methods to access, add to, and remove from elements, categories, and templates.
+- Changed the design of StoryGenerator to include removeCategory.
+
+## [2025.10.09]
+### Added
+- The kernel implementation of `StoryGenerator`
+- Completed the doc *05-component-kernel-implementation* which explains why `StoryGenerator` is modeled this way.
+
+
 ## [2025.10.09]
 - completed the pre-assignment in component brainstormin
 
 ## [2025.10.07]
-- 
+-
 
 ## [2025.09.19]
 - Designed a storyGenerator component
