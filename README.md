@@ -1,8 +1,11 @@
 # Portfolio Project
 
-The purpose of this repo is to provide a framework for creating your own
-component in the software sequence discipline. If you were unsure whether
-or not to make your own, consider the following testimonial:
+## Summary
+This is a portfolio project done in my Software II course under the guidance of Jeremy Grifski.
+- Architected a 4-tier software hierarchy (Kernel, Enhanced, Abstract, Implementation) following the OSU Software Sequence discipline to model a complex plot generation system.
+- Engineered a robust kernel to achieve O(1) average-time lookup for element categories and story templates while maintaining strict Representation Invariants and Correspondence.
+- Authored formal behavioral specifications using Design by Contract (DbC) annotations and designed a JUnit test suite that validates non-deterministic methods through statistical verification.
+
 
 > I really enjoyed the portfolio project! It gave me a stronger understanding
 > of the OSU software discipline while also giving me the flexibility to
@@ -20,15 +23,15 @@ a bit easier.
 
 Assuming you're reading this README from GitHub, you can make use of this
 repo by clicking the `Use this template` button in the top-right corner of
-this page. If you can't find the button, [this link][use-this-template] 
-should work as well. Personally, I would recommend using the 
-`Create a new repository` option, which will allow you to name the 
-repository after your component. Given that you will be submitting pull 
-requests to me through Carmen, you'll want to make sure your repository 
-is public. Then, you can click `Create repository`. After that, you can 
-go through all the usual steps of cloning a repository on your system to 
-get to work. I use GitHub Desktop to clone projects, and it has a nice 
-feature of letting you open a repo directly in VSCode from the 
+this page. If you can't find the button, [this link][use-this-template]
+should work as well. Personally, I would recommend using the
+`Create a new repository` option, which will allow you to name the
+repository after your component. Given that you will be submitting pull
+requests to me through Carmen, you'll want to make sure your repository
+is public. Then, you can click `Create repository`. After that, you can
+go through all the usual steps of cloning a repository on your system to
+get to work. I use GitHub Desktop to clone projects, and it has a nice
+feature of letting you open a repo directly in VSCode from the
 `Repository` menu.
 
 ### Step 2: Install Recommended Plugins
@@ -63,7 +66,7 @@ you put here by default, so don't worry about committing it to version control.
 Similarly, you will need the testing APIs (e.g., JUnit). Perhaps the easiest way
 to include them in your project is to click the beaker symbol in the left
 sidebar; it's right below the extensions button which looks like four squares.
-If you do not see this button, try creating a Java file in `src`. From there, 
+If you do not see this button, try creating a Java file in `src`. From there,
 you can click "Enable Java Tests" and then click "JUnit" from the
 dropdown. That's it! You should now see the two JUnit libraries in the lib
 folder.
